@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<!--
+  Author: YOUR NAME
+  GU username: YOUR-GU-USERNAME
+  Course: BMIS 235 - HTML-2
+-->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="author" content="YOUR NAME">
+
+<!-- this is the title that shows up on the tab of a web browser -->
+<title>John Correia's Podcasts</title>
+
+<style>
+h1  {text-align: center;}
+h2  {text-align: center;}
+a   {color: inherit;}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-align: center;
+}
+</style>
+</head>
+
+<body>
+
+<!-- ===================== DARK MODE BUTTON ===================== -->
+<!-- The script below is a tiny program. It swaps the page colors -->
+<!-- when you click the button.                                    -->
+<p style="text-align: center;"><button onclick="toggleDark()">Dark mode on / off</button></p>
+<script>
+  // change these two colors
+  var lightBackground = "lightgray";
+  var darkBackground = "#333333";
+  var dark = false;
+  document.body.style.backgroundColor = lightBackground;
+  function toggleDark() {
+    dark = !dark;
+    document.body.style.backgroundColor = dark ? darkBackground : lightBackground;
+    document.body.style.color = dark ? "white" : "black";
+  }
+</script>
+
+<a id="top"></a>
+
+<h1>Professor Correia's Podcasts</h1>
+<p style="text-align: center;">Email me at correia@gonzaga.edu for episode suggestions</p>
+
+<!-- ===================== MENU OF IMAGES ===================== -->
+<!-- Click an image and it jumps down to its video.            -->
+<!-- The "Mind" section works. Use it as your model.           -->
+<ul>
+
+    <li><h2>For the Mind</h2></li>
+    <!-- Mind: an UPLOADED image (gervais.jpg is in this folder) -->
+    <li><a href="#findingmastery"><img src="gervais.jpg" width="400" height="400" alt="Michael Gervais"></a></li>
+
+    <li><h2>For the Body</h2></li>
+    <!-- Body: use an image from an OUTSIDE web address (src="https://...") -->
+    <!-- huberman.jpg is in this folder, but do not use it here.          -->
+    <li><a href="#huberman"> IMAGE GOES HERE </a></li>
+
+    <li><h2>For the Craft</h2></li>
+    <!-- Craft: use the UPLOADED image fridman.jpg (already in this folder) -->
+    <li><a href="#fridman"> IMAGE GOES HERE </a></li>
+
+</ul>
+
+<!-- ===================== VIDEO SECTIONS ===================== -->
+
+<!-- MIND: Finding Mastery (this one works) -->
+<a id="findingmastery"></a>
+<a href="https://www.youtube.com/@FindingMastery">
+<h2>Finding Mastery</h2>
+</a>
+<center>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/4L98ssI5Vxw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</center>
+
+<!-- BODY: Huberman Lab (fix me: the id, the channel link, the title and the video) -->
+<a id=""></a>
+<a href="https://www.youtube.com/@FindingMastery">
+<h2>Finding Mastery</h2>
+</a>
+<center>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/4L98ssI5Vxw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</center>
+
+<!-- CRAFT: Lex Fridman (fix me: the id, the channel link, the title and the video) -->
+<a id=""></a>
+<a href="https://www.youtube.com/@FindingMastery">
+<h2>Finding Mastery</h2>
+</a>
+<center>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/4L98ssI5Vxw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</center>
+
+<!-- ===================== YOUR BUSINESS EMBED ===================== -->
+<!-- Paste ONE embed between the <center> tags below:              -->
+<!-- a Google Map, a Google Form or a Tableau Public dashboard.     -->
+<!-- The code you paste starts with <iframe and ends with </iframe>. -->
+<!-- Change the heading to say what it is.                           -->
+<h2>My business embed</h2>
+<center>
+
+</center>
+
+<p style="font-size: small; text-align: center;"><a href="#top">To top</a></p>
+
+<!-- Footer: fill in your name -->
+<p style="text-align: center;">Built by YOUR NAME &middot; BMIS 235</p>
+
+</body>
+</html>
